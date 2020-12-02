@@ -1,22 +1,22 @@
-import logo from './logo.svg';
+import GoogleLogin from 'react-google-login';
 import './App.css';
+
+const responseGoogle = (response) => {
+  console.log(response);
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <nav>
+      <a className="App-link">הורים משתפים</a>
+      <a className="App-link">אנשי מקצוע</a>
+      <a className="App-link">זיהוי קשיים</a>
+      <a className="App-link">מאמרי חינוך</a>
+    </nav>
+       <h2>ואין אדם שאין לו נר</h2>
+       <a>התחבר</a>
       </header>
     </div>
   );
